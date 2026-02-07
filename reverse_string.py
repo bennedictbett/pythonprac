@@ -29,3 +29,16 @@ class solution:
                 s[l], s[r] = s[r], s[l]
                 reverse(l + 1, r - 1)
         reverse(0, len(s) -1)
+
+
+
+class solution:
+    def lengthOfLastWord(self, s):
+        i, length = len(s) -1, 0
+        while i[s] == " ":
+            i -= 1
+        while i >= 0 and i[s] == " ":
+            length += 1
+            i += 1
+
+        return length   
